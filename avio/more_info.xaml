@@ -1,0 +1,19 @@
+﻿<Window x:Class="avio.more_info"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:avio"
+        mc:Ignorable="d"
+        Title="more_info" Height="450" Width="800" WindowStartupLocation="CenterScreen">
+    <Window.Background>
+        <ImageBrush ImageSource="/blue.jpg"/>
+    </Window.Background>
+    <Grid>
+        <Image x:Name="image" HorizontalAlignment="Left" Height="224" Margin="32,79,0,0" VerticalAlignment="Top" Width="258" Source="{Binding a}"/>
+        <TextBlock x:Name="txt" HorizontalAlignment="Left" Height="237" Margin="376,47,0,0" TextWrapping="Wrap" Text="{Binding c}" VerticalAlignment="Top" Width="364"/>
+        <Label x:Name="auth" Content="{Binding b}" HorizontalAlignment="Left" Height="29" Margin="37,31,0,0" VerticalAlignment="Top" Width="250"/>
+        <Button Content="назад" HorizontalAlignment="Left" Height="51" Margin="41,316,0,0" VerticalAlignment="Top" Width="101" Click="Button_Click"/>
+
+    </Grid>
+</Window>

@@ -1,0 +1,28 @@
+﻿<Window x:Class="avio.settings"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:avio"
+        mc:Ignorable="d"
+        Title="settings" Height="450" Width="800" WindowStartupLocation="CenterScreen">
+    <Grid>
+        <Grid.Background>
+            <ImageBrush ImageSource="/blue.jpg"/>
+        </Grid.Background>
+        <TextBox x:Name="name" HorizontalAlignment="Left" Height="34" Margin="120,68,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="149"/>
+        <TextBox x:Name="surname" HorizontalAlignment="Left" Height="34" Margin="120,121,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="149"/>
+        <TextBox x:Name="patronomic" HorizontalAlignment="Left" Height="34" Margin="120,177,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="149"/>
+        <Button Content="Назад" HorizontalAlignment="Left" Height="42" Margin="39,357,0,0" VerticalAlignment="Top" Width="98" Click="Button_Click"/>
+        <Label Content="Настройки" HorizontalAlignment="Left" Height="31" Margin="35,16,0,0" VerticalAlignment="Top" Width="185"/>
+        <Label Content="Выбор языка" HorizontalAlignment="Left" Height="31" Margin="347,14,0,0" VerticalAlignment="Top" Width="185"/>
+        <Label Content="Имя" HorizontalAlignment="Left" Height="30" Margin="46,70,0,0" VerticalAlignment="Top" Width="69"/>
+        <Label Content="Фамилия" HorizontalAlignment="Left" Height="30" Margin="46,124,0,0" VerticalAlignment="Top" Width="69"/>
+        <Label Content="Отчество" HorizontalAlignment="Left" Height="30" Margin="46,179,0,0" VerticalAlignment="Top" Width="69"/>
+        <Button Content="Сохраить изменения" HorizontalAlignment="Left" Height="42" Margin="127,274,0,0" VerticalAlignment="Top" Width="127" Click="edit_Click"/>
+        <Label Content="Выбор темы" HorizontalAlignment="Left" Height="31" Margin="551,14,0,0" VerticalAlignment="Top" Width="126"/>
+        <TextBox x:Name="password" HorizontalAlignment="Left" Height="34" Margin="120,227,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="149"/>
+        <Label Content="Пароль" HorizontalAlignment="Left" Height="30" Margin="46,230,0,0" VerticalAlignment="Top" Width="69"/>
+
+    </Grid>
+</Window>

@@ -1,0 +1,57 @@
+﻿<Window x:Class="avio.tickets"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:avio"
+        mc:Ignorable="d"
+        Title="tickets" Height="450" Width="900" WindowStartupLocation="CenterScreen">
+    <Window.Background>
+        <ImageBrush ImageSource="/blue.jpg"/>
+    </Window.Background>
+    <Window.Resources>
+        <BitmapImage x:Key="ImON" UriSource="red_heart.png"/>
+        <BitmapImage x:Key="ImOFF" UriSource="heart.png"/>
+    </Window.Resources>
+    <Grid>
+        <DataGrid x:Name="grid" HorizontalAlignment="Center" CanUserAddRows="False" Height="174" Margin="0,119,0,0" VerticalAlignment="Top" Width="830">
+            <DataGrid.Columns>
+                <DataGridTemplateColumn>
+                    <DataGridTemplateColumn.CellTemplate>
+                        <DataTemplate>
+                            <Button
+                                Name="love"
+                                HorizontalContentAlignment="Center"
+                                VerticalContentAlignment="Center"
+                                Width="20" Height="20"
+                                Click="Love_Click" 
+                                FontSize="10" ToolTip="Cохранить в избранное"
+                                >
+                                <Image Source="{StaticResource ImOFF}"/>
+                            </Button>
+                        </DataTemplate>
+                    </DataGridTemplateColumn.CellTemplate>
+                </DataGridTemplateColumn>
+                <DataGridTemplateColumn>
+                    <DataGridTemplateColumn.CellTemplate>
+                        <DataTemplate>
+                            <Button 
+                                Name="buy"
+                                HorizontalContentAlignment="Center"
+                                VerticalContentAlignment="Center"
+                                Content="Купить" Width="30" Height="20"
+                                Click="buy_Click" 
+                                Background="LightBlue" FontSize="10"
+                                />
+                        </DataTemplate>
+                    </DataGridTemplateColumn.CellTemplate>
+                </DataGridTemplateColumn>
+            </DataGrid.Columns>
+        </DataGrid>
+        <Label Content="Авиобилеты" HorizontalAlignment="Left" Margin="31,19,0,0" VerticalAlignment="Top" Height="46" Width="269" FontSize="24" FontFamily="Arial Black" RenderTransformOrigin="0.503,0.697" Foreground="White" BorderBrush="#FFC56363" OpacityMask="#FF703737"/>
+        <Button Content="обновить" HorizontalAlignment="Left" Height="34" Margin="41,69,0,0" VerticalAlignment="Top" Width="94" Click="Button_Click"/>
+        <Button Content="Назад" HorizontalAlignment="Left" Height="42" Margin="38,360,0,0" VerticalAlignment="Top" Width="98" Click="back_Click"/>
+        <Button Content="Избранное" HorizontalAlignment="Left" Height="42" Margin="742,368,0,0" VerticalAlignment="Top" Width="98" Click="like_Click"/>
+
+    </Grid>
+</Window>

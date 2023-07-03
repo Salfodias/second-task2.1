@@ -1,0 +1,28 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="Хранилище avioModel" Provider="System.Data.SqlClient" ProviderManifestToken="2012" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+  <!--Ошибки, обнаруженные при создании:
+предупреждение 6002: В таблице или представлении "avio.dbo.users" не определен первичный ключ. Ключ был выведен, а определение таблицы или представления было создано в режиме только для чтения.-->
+  <EntityType Name="users">
+    <Key>
+      <PropertyRef Name="user_id" />
+    </Key>
+    <Property Name="user_id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="user_login" Type="nvarchar" MaxLength="50" />
+    <Property Name="user_pass" Type="nvarchar" MaxLength="50" />
+    <Property Name="name_user" Type="nvarchar" MaxLength="50" />
+    <Property Name="surname" Type="nvarchar" MaxLength="50" />
+    <Property Name="patronomic" Type="nvarchar" MaxLength="50" />
+  </EntityType>
+  <EntityContainer Name="Хранилище avioModelContainer">
+    <EntitySet Name="users" EntityType="Self.users" store:Type="Tables" store:Schema="dbo">
+      <DefiningQuery>SELECT 
+    [users].[user_id] AS [user_id], 
+    [users].[user_login] AS [user_login], 
+    [users].[user_pass] AS [user_pass], 
+    [users].[name_user] AS [name_user], 
+    [users].[surname] AS [surname], 
+    [users].[patronomic] AS [patronomic]
+    FROM [dbo].[users] AS [users]</DefiningQuery>
+    </EntitySet>
+  </EntityContainer>
+</Schema>

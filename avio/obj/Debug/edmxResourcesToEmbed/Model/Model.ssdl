@@ -1,0 +1,20 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="Хранилище avioModel" Provider="System.Data.SqlClient" ProviderManifestToken="2012" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+  <EntityType Name="users">
+    <Key>
+      <PropertyRef Name="user_id" />
+    </Key>
+    <Property Name="user_id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="user_login" Type="nvarchar" MaxLength="50" />
+    <Property Name="user_pass" Type="nvarchar" MaxLength="50" />
+    <Property Name="name_user" Type="nvarchar" MaxLength="50" />
+    <Property Name="surname" Type="nvarchar" MaxLength="50" />
+    <Property Name="patronomic" Type="nvarchar" MaxLength="50" />
+    <Property Name="bio" Type="nvarchar" MaxLength="100" />
+    <Property Name="status_login" Type="nvarchar" MaxLength="2" />
+    <Property Name="picture" Type="image" />
+  </EntityType>
+  <EntityContainer Name="Хранилище avioModelContainer">
+    <EntitySet Name="users" EntityType="Self.users" Schema="dbo" store:Type="Tables" />
+  </EntityContainer>
+</Schema>

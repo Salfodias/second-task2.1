@@ -1,0 +1,49 @@
+{
+  "meta": {},
+  "data": [
+    {
+      "author": "Андрей",
+      "image": "C:\\Users\\Andrey\\source\\repos\\avio\\post_image\\hotel1.jpg",
+      "disc": "отличный отель жилье особого типа в регионе Йеллоустонский национальный парк",
+	"key": "1"
+
+    },
+    {
+      "author": "Джон",
+      "image": "C:\\Users\\Andrey\\source\\repos\\avio\\post_image\\hotel2.jpg",
+      "disc": "отличный отель",
+	"key": "2"
+    },
+{
+      "author": "Николай123",
+      "image": "C:\\Users\\Andrey\\source\\repos\\avio\\post_image\\hotel3.jpg",
+      "disc": "хороший отель",
+	"key": "3"
+    },
+{
+      "author": "Кирилл234",
+      "image": "C:\\Users\\Andrey\\source\\repos\\avio\\post_image\\hotel4.jpg",
+      "disc": "плохой отель",
+	"key": "4"
+},
+{
+      "author": "Тимур",
+      "image": "C:\\Users\\Andrey\\source\\repos\\avio\\post_image\\hotel5.jpg",
+      "disc": "нормальный отель",
+	"key": "5"
+},
+{
+      "author": "Иван Татарин",
+      "image": "C:\\Users\\Andrey\\source\\repos\\avio\\post_image\\hotel6.jpg",
+      "disc": "ужасный отель",
+	"key": "6"
+},
+{
+      "author": "Петр Последний",
+      "image": "C:\\Users\\Andrey\\source\\repos\\avio\\post_image\\hotel7.jpg",
+      "disc": "страшно помогите мне сбежать",
+	"key": "7"
+    }
+         
+  ]
+}

@@ -1,0 +1,17 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="Хранилище avioModelContainer" CdmEntityContainer="avioEntities">
+    <EntitySetMapping Name="users">
+      <EntityTypeMapping TypeName="avioModel.users">
+        <MappingFragment StoreEntitySet="users">
+          <ScalarProperty Name="user_id" ColumnName="user_id" />
+          <ScalarProperty Name="user_login" ColumnName="user_login" />
+          <ScalarProperty Name="user_pass" ColumnName="user_pass" />
+          <ScalarProperty Name="name_user" ColumnName="name_user" />
+          <ScalarProperty Name="surname" ColumnName="surname" />
+          <ScalarProperty Name="patronomic" ColumnName="patronomic" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+  </EntityContainerMapping>
+</Mapping>
